@@ -1,7 +1,9 @@
+import 'reflect-metadata';
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import routes from './routes';
 import AppError from '@shared/errors/AppError';
+import '@shared/connection';
 
 const app = express();
 
@@ -27,5 +29,5 @@ app.use(
 );
 
 app.listen(3333, () => {
-  console.log('[API] Server started on port 3333');
+  console.log('[API] Server started');
 });
