@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"
   },
